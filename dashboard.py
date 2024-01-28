@@ -1,4 +1,5 @@
 
+pip install plotly
 import streamlit as st
 
 import plotly.express as px
@@ -15,7 +16,7 @@ st.write('The dashboard is based from Superstore data that can be retrieved from
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 
-os.chdir(r"D:\streamlit")
+#os.chdir(r"D:\streamlit")
 df =  pd.read_csv('superstore.csv',encoding= "ISO-8859-1")
 
 state2abbrev = {
